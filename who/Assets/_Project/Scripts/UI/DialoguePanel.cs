@@ -17,6 +17,5 @@ public class DialoguePanel : MonoBehaviour, IInteractive
     }
 
     public void Interact()
-    {
-    }
+    { }
 }
