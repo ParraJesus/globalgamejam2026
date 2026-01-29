@@ -1,6 +1,8 @@
 using UnityEngine;
 
-public class RoundManager
+public enum rounds
 {
-    
+    round1,
+    round2,
+    round3
 }

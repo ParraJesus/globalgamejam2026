@@ -1,6 +1,10 @@
 using UnityEngine;
 
-public class OptionsManager
+public enum OptionsManager
 {
-    
+    vista,
+    sonido,
+    olfato,
+    tacto,
+    gusto
 }

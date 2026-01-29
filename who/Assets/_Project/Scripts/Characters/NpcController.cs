@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NpcController
+public class NpcController : MonoBehaviour
 {
     
 }
