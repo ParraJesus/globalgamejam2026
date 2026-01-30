@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round1_Q_Leon
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "Desde hace tiempo te he visto fisgonear en asuntos que no te importaban. A ver,
+    no vi nada fuera de lo normal, todo parec\xEDa tranquilo mientras estuve cerca
+    del sal\xF3n."
+  - "La chica con m\xE1scara de b\xFAho se separ\xF3 un momento de la chica con m\xE1scara
+    de zorro y se acerc\xF3 a la mesa, nada m\xE1s."

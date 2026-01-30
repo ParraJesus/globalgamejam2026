@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round1_Q_Mapache
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "Estaba en un rinc\xF3n, observando. No vi al hombre con m\xE1scara de elefante
+    acercarse al chico junto a la barra."
+  - "El chico con m\xE1scara de le\xF3n se acerc\xF3 a la ventana a fumar cuando
+    se apagaron las luces, me llam\xF3 la atenci\xF3n."

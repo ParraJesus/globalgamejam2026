@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef425c3f336597d4cba089362e5a2846, type: 3}
+  m_Name: Round1_Leon
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueRoundData
+  round: 0
+  dialogueSequences:
+  - {fileID: 11400000, guid: 7f4cbfcceba1e0141a2b4ccd2d2d3f30, type: 2}
+  - {fileID: 11400000, guid: 60139b2399da8c04e8ab6380d003154d, type: 2}
