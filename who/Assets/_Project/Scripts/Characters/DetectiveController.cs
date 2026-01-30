@@ -8,6 +8,10 @@ public class DetectiveController : MonoBehaviour
     private Vector2 moveInput;
     private Animator animator;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

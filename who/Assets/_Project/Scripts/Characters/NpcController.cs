@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour, IInteractive
 {
-    public DialogueUI dialogueUI;
+    private DialogueUI dialogueUI;
     public string NPCID {  get; private set; }
     public bool IsTalking { get; private set; }
 
@@ -14,10 +14,22 @@ public class NpcController : MonoBehaviour, IInteractive
     {
         NPCID ??= GlobalHelper.GenerateUniqueID(gameObject);
 
+        dialogueUI = DialogueUI.Instance;
+
         if (dialogueUI != null) 
         {
             dialogueUI.OnDialogueEnded += EndTalking;
         }
+        else
+        {
+            Debug.LogError("DialogueUI Instance no encontrado.");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (dialogueUI != null)
+            dialogueUI.OnDialogueEnded -= EndTalking;
     }
 
     public bool CanInteract()

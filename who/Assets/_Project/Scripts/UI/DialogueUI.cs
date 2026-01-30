@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
+    public static DialogueUI Instance;
+
     [Header("UI")]
     public TextMeshProUGUI dialogueText;
     public Image portraitImage;
@@ -37,6 +39,18 @@ public class DialogueUI : MonoBehaviour
     public event Action OnDialogueEnded;
 
     private NpcController currentNPC;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void SetCharacter(CharacterDialogue character)
     {
@@ -136,6 +150,11 @@ public class DialogueUI : MonoBehaviour
             timerManager.BadAccuse();
             GameManager.instance.SetState(GameState.Gameplay);
         }
+    }
+
+    public void OnClose()
+    {
+        currentNPC.SetIsTalking(false);
     }
 
     // ===== TYPING =====
