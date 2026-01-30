@@ -44,6 +44,9 @@ public class ScreenFader : MonoBehaviour
         float start = canvasGroup.alpha;
         float t = 0f;
 
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = true;
+
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
@@ -52,5 +55,11 @@ public class ScreenFader : MonoBehaviour
         }
 
         canvasGroup.alpha = target;
+
+        if (target == 0)
+        {
+            canvasGroup.blocksRaycasts = false;
+            canvasGroup.interactable = false;
+        }
     }
 }

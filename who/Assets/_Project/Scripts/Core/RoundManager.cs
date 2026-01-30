@@ -63,6 +63,8 @@ public class RoundManager: MonoBehaviour
 
         yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(scene.sceneName);
 
+        roundEnding = false;
+
         yield return ScreenFader.instance.FadeIn();
     }
 
@@ -72,6 +74,8 @@ public class RoundManager: MonoBehaviour
 
         var scene = roundScenes.Find(r => r.round == currentRound);
         yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(scene.sceneName);
+
+        roundEnding = false;
 
         yield return ScreenFader.instance.FadeIn();
     }

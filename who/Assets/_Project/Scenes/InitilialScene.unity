@@ -265,6 +265,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ff9933a93c0824581c0965937f4fb9, type: 3}
+--- !u!1 &591764464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8667908689442534878, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
+  m_PrefabInstance: {fileID: 1091529301807378769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663659984
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,12 +412,24 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5068924691530863896, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
   m_PrefabInstance: {fileID: 1091529301807378769}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 591764464}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 322bac003975d644587e9a759c0eadf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueUI
+--- !u!225 &1435112508
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591764464}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1477674386
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +517,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 206414939238552904, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
+      propertyPath: fadeDuration
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 289207181252555662, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -580,6 +601,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5068924691530863896, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
+      propertyPath: canvasGroup
+      value: 
+      objectReference: {fileID: 1435112508}
     - target: {fileID: 7601583416452474355, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_Name
       value: UI
@@ -591,7 +616,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8667908689442534878, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1435112508}
   m_SourcePrefab: {fileID: 100100000, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
 --- !u!114 &1091529301807378770 stripped
 MonoBehaviour:
