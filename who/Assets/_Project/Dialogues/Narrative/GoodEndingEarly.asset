@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dc8886501a6154bb3f211468b89f4c, type: 3}
+  m_Name: GoodEndingEarly
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeDialogueData
+  lines:
+  - "Finalmente, tras reconstruir los hechos y analizar cada detalle de la noche,
+    el detective logr\xF3 identificar a la responsable. La asesina result\xF3 ser
+    la enmascarada de b\xFAho, culpable de la muerte del hombre enmascarado de oso."
+  - "Gracias a que el crimen fue descubierto a tiempo, no hubo m\xE1s v\xEDctimas.
+    La evidencia reunida permiti\xF3 detenerla antes de que la situaci\xF3n empeorara.
+    En el bolsillo de su abrigo se encontr\xF3 una llave, con la cual pudieron abrir
+    las puertas que hab\xEDan permanecido cerradas durante toda la velada."
+  - "Al salir, los asistentes comprendieron que, pese a la tragedia, hab\xEDan logrado
+    evitar un desenlace mucho peor. La fiesta termin\xF3 y con \xE9l descubrimiento
+    del asesino, se acab\xF3 el peligro."

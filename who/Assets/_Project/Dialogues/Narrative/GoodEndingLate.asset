@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dc8886501a6154bb3f211468b89f4c, type: 3}
+  m_Name: GoodEndingLate
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeDialogueData
+  lines:
+  - "Finalmente, despu\xE9s de que transcurrieran aquellos dos asesinatos, el detective
+    logr\xF3 descubrir a la asesina, resultando ser la enmascarada de b\xFAho. Tras
+    acabar con la vida de dos personas, se reunieron las pruebas necesarias para
+    confirmar su culpabilidad, permitiendo que fuera arrestada como una asesina en
+    serie."
+  - "Al revisar sus pertenencias, encontraron una llave oculta en el bolsillo de
+    su abrigo. Con ella, lograron abrir las puertas que hab\xEDan permanecido cerradas
+    durante toda la noche. Una vez abiertas, los sobrevivientes pudieron abandonar
+    el lugar, dejando atr\xE1s la fiesta que se hab\xEDa convertido en una condena."
+  - "La noche termin\xF3, junto con la fiesta que los encerr\xF3 por horas."

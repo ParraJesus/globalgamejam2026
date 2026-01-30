@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bb3db4453e74247aef4e3c00efb5ef, type: 3}
+  m_Name: Rounds_Buho
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueData
+  npcName: Buho
+  npcPortrait: {fileID: 3292793625578150579, guid: a7ca8f9f9fa0ea04abeaf25fe837b69d, type: 3}
+  voiceSound: {fileID: 0}
+  rounds:
+  - {fileID: 11400000, guid: fbb045e1af8f002469a870bb6b38bae6, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}

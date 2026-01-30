@@ -5,5 +5,5 @@ using UnityEngine;
 public class DialogueRoundData : ScriptableObject
 {
     public rounds round;
-    public List<DialogueByOptions> dialogues;
+    public List<DialogueSequence> dialogueSequences;
 }
