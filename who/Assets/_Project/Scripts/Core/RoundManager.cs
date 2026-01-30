@@ -59,6 +59,8 @@ public class RoundManager: MonoBehaviour
             yield break;
         }
 
+        GameManager.instance.RegisterDeath();
+
         var scene = roundScenes.Find(r => r.round == currentRound);
 
         yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(scene.sceneName);
