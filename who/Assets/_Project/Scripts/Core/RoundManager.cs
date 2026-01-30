@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RoundManager: MonoBehaviour
@@ -12,14 +13,19 @@ public class RoundManager: MonoBehaviour
     [Header("References")]
     [SerializeField] TimerManager timerManager;
 
+    [SerializeField] List<RoundScene> roundScenes;
+
     public event Action OnAllRoundsCompleted;
 
     private bool roundEnding;
 
     private void Awake()
     {
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else Destroy(gameObject);
     }
 
     private void Start()
@@ -29,21 +35,8 @@ public class RoundManager: MonoBehaviour
 
     public void StartFirstRound()
     {
-        ScreenFader.instance.FadeOut();
         currentRound = rounds.round1;
-        ScreenFader.instance.FadeIn();
-        StartRound();
-    }
-
-    void StartRound()
-    {
-        roundEnding = false;
-        timerManager.ResetTimer();
-
-        GameManager.instance.SetCurrentRound(currentRound);
-        Debug.Log($"Ronda iniciada: {currentRound}");
-
-        ResetNPCs();
+        StartCoroutine(LoadFirstScene());
     }
 
     void EndRound()
@@ -62,25 +55,24 @@ public class RoundManager: MonoBehaviour
 
         if (currentRound > rounds.round3)
         {
-            Debug.Log("Muere el detective");
             OnAllRoundsCompleted?.Invoke();
             yield break;
         }
 
-        GameManager.instance.SetCurrentRound(currentRound);
+        var scene = roundScenes.Find(r => r.round == currentRound);
+
+        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(scene.sceneName);
 
         yield return ScreenFader.instance.FadeIn();
-
-        StartRound();
     }
 
-    void ResetNPCs()
+    IEnumerator LoadFirstScene()
     {
-        var npcs = FindObjectsByType<NpcController>(sortMode: FindObjectsSortMode.InstanceID);
-        foreach (var npc in npcs)
-        {
-            npc.ForceReset();
-        }
-    }
+        yield return ScreenFader.instance.FadeOut();
 
+        var scene = roundScenes.Find(r => r.round == currentRound);
+        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(scene.sceneName);
+
+        yield return ScreenFader.instance.FadeIn();
+    }
 }

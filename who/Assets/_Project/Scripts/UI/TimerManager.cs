@@ -4,6 +4,8 @@ using System;
 
 public class TimerManager: MonoBehaviour
 {
+    public static TimerManager instance;
+
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
 
@@ -14,6 +16,7 @@ public class TimerManager: MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         timeSet = remainingTime;
         DontDestroyOnLoad(gameObject);
     }
@@ -68,5 +71,10 @@ public class TimerManager: MonoBehaviour
     public void StopTimer()
     {
         IsRunning = false;
+    }
+
+    public void SetIsRunning(bool running)
+    {
+        IsRunning = running;
     }
 }

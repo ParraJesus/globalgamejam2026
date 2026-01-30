@@ -32,7 +32,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        SetState(GameState.Narrative);
+
         RoundManager.Instance.OnAllRoundsCompleted += EvaluateGame;
+
         dialogueUI.OnDialogueEnded += OnIntroFinished;
         dialogueUI.StartNarrative(introDialogue);
     }
@@ -82,10 +85,16 @@ public class GameManager : MonoBehaviour
     public void EvaluateGame()
     {
         if (!KillerIndentified)
+        {
             EndGame(badEnding);
+            return;
+        }
 
         if (Deaths == 1)
+        {
             EndGame(goodEndingEarly);
+            return;
+        }
 
         EndGame(goodEndingLate);
     }
