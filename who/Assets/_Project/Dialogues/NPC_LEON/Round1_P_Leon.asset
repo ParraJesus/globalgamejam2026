@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 1
   lines:
-  - "Yo solo hago lo m\xEDo. Bailo si quiero, hablo si quiero. Y no me interesa que
-    a alguien le parezca exagerado."
+  - "Extra\xF1o\u2026 depende de c\xF3mo lo veas. Extra\xF1o est\xE1s t\xFA pregunt\xE1ndome
+    tanto a m\xED."

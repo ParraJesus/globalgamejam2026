@@ -14,6 +14,7 @@ public class RoundManager: MonoBehaviour
     [SerializeField] TimerManager timerManager;
 
     [SerializeField] List<RoundScene> roundScenes;
+    [SerializeField] List<RoundNarrativeTransition> roundNarratives;
 
     public event Action OnAllRoundsCompleted;
 
@@ -51,6 +52,8 @@ public class RoundManager: MonoBehaviour
     {
         yield return ScreenFader.instance.FadeOut();
 
+        var transition = roundNarratives.Find(r => r.round == currentRound);
+
         currentRound++;
 
         if (currentRound > rounds.round3)
@@ -68,6 +71,15 @@ public class RoundManager: MonoBehaviour
         roundEnding = false;
 
         yield return ScreenFader.instance.FadeIn();
+
+        if (transition != null)
+        {
+            bool finished = false;
+            DialogueUI.Instance.OnDialogueEnded += () => finished = true;
+            DialogueUI.Instance.StartNarrative(transition.narrativeTransition);
+            yield return new WaitUntil(() => finished);
+        }
+        GameManager.instance.SetState(GameState.Gameplay);
     }
 
     IEnumerator LoadFirstScene()

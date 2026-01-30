@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "Vi al chico junto a la barra antes de que se apagaran las luces. Parec\xEDa
-    que estaba solo por un momento, nadie se acercaba demasiado."
-  - "La chica con m\xE1scara de zorro estaba cerca de la barra, hablando con alguien,
-    no me acerqu\xE9 para interrumpir\u2026 Me est\xE1 asustando todo esto, \xBFPor
-    qu\xE9 nadie puede abrir la puerta?."
+  - Solo vine por la comida, tienen todo un buffet en la mesa y por lo que veo, nadie
+    quiere tocarlo, yo me lo llevo.
+  - "Es que\u2026 uno nunca sabe c\xF3mo comportarse en estas fiestas. Siempre hay
+    alguien que se ofende por cualquier cosa."

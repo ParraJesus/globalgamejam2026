@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
+  - "\xA1A mi no me metas en este saco!,  no estuve cerca del chico junto a la mesa
+    Me mantuve m\xE1s lejos de todo eso."
   - "Vi la m\xE1scara de le\xF3n cerca de la barra, pero no s\xE9 si tuvo algo que
     ver con lo que pas\xF3, no puedo asegurarlo."
-  - "Creo que la chica con m\xE1scara de mapache estaba demasiado cerca del chico
-    junto a la barra\u2026 creo que deber\xEDas de preguntarle, podr\xEDa tener relaci\xF3n
-    con lo que ocurri\xF3."

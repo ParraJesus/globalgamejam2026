@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 1
   lines:
-  - "(No hay m\xE1s respuestas)"
+  - "El hombre con m\xE1scara de sapo no estuvo cerca del chico junto a la barra,
+    al menos eso me parece\u2026 yo estaba mirando otras cosas."
