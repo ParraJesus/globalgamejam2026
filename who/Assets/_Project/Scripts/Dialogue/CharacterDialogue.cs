@@ -18,6 +18,12 @@ public class CharacterDialogue : MonoBehaviour
         roundData = dialogueData.rounds
             .Find(r => r.round == GameManager.instance.CurrentRound);
 
+        if (roundData == null)
+        {
+            Debug.LogError($"[CharacterDialogue] No hay diálogo data para {dialogueData.npcName} en ronda {GameManager.instance.CurrentRound}");
+            return;
+        }
+
         currentMode = DialogueMode.Question;
         lineIndex = 0;
         pressureUnlocked = false;
@@ -64,6 +70,9 @@ public class CharacterDialogue : MonoBehaviour
     // ===== CARGA =====
     void LoadCurrentSequence()
     {
+        if (roundData == null)
+            return;
+
         var seq = roundData.dialogueSequences
             .Find(d => d.mode == currentMode);
 

@@ -26,6 +26,7 @@ public class DialogueUI : MonoBehaviour
 
     [Header("References")]
     [SerializeField] TimerManager timerManager;
+    [SerializeField] CanvasGroup canvasGroup;
 
     private CharacterDialogue currentCharacter;
     private Coroutine typingCoroutine;
@@ -54,7 +55,11 @@ public class DialogueUI : MonoBehaviour
 
     public void SetCharacter(CharacterDialogue character)
     {
-        ActivateButtons();
+        GameManager.instance.SetState(GameState.Gameplay);
+
+        canvasGroup.alpha = 1;
+        SetUIInteractable(true);
+
         currentCharacter = character;
         currentCharacter.StartDialogue();
 
@@ -62,18 +67,16 @@ public class DialogueUI : MonoBehaviour
         npcName.text = character.dialogueData.npcName;
 
         pressureButton.gameObject.SetActive(false);
-
-        ShowCurrentLine();
-        gameObject.SetActive(true);
-    }
-
-    void ActivateButtons()
-    {
         closeButton.gameObject.SetActive(true);
+        accuseButton.gameObject.SetActive(false);
         questionButton.gameObject.SetActive(true);
+        narrativeButton.gameObject.SetActive(false);
+
         portraitImage.gameObject.SetActive(true);
         npcName.gameObject.SetActive(true);
-        narrativeButton.gameObject.SetActive(false);
+
+        gameObject.SetActive(true);
+        ShowCurrentLine();
     }
 
     public void SetTarget(NpcController npc)
@@ -195,14 +198,26 @@ public class DialogueUI : MonoBehaviour
     void EndDialogue()
     {
         StopTyping();
+        SetUIInteractable(false);
         gameObject.SetActive(false);
         currentCharacter = null;
+        currentNPC = null;
         OnDialogueEnded?.Invoke();
+    }
+
+    void SetUIInteractable(bool value)
+    {
+        canvasGroup.interactable = value;
+        canvasGroup.blocksRaycasts = value;
     }
 
     public void StartNarrative(NarrativeDialogueData data)
     {
         GameManager.instance.SetState(GameState.Narrative);
+
+        SetUIInteractable(true);
+        canvasGroup.alpha = 1;
+
         narrativeLines = data.lines;
         narrativeIndex = 0;
 
