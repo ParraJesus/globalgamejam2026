@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dc8886501a6154bb3f211468b89f4c, type: 3}
+  m_Name: IntroDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeDialogueData
+  lines:
+  - "Eres un detective que investiga a un asesino en serie que selecciona a sus v\xEDctimas
+    entre personas con poder econ\xF3mico y social. Hasta ahora, todos los asesinatos
+    han ocurrido en eventos privados donde nadie usa su identidad real."
+  - "A trav\xE9s de una fuente an\xF3nima, recibes informaci\xF3n de que el asesino
+    asistir\xE1 a una fiesta de m\xE1scaras exclusiva, con una regla en espec\xEDfico:
+    ning\xFAn invitado puede revelar datos que permitan identificar a otro."
+  - "Asistes al evento porque es la \xFAnica oportunidad de observar al asesino en
+    un entorno cerrado. "
+  - "En la fiesta hay 10 invitados, cada uno con una m\xE1scara distinta, todos pueden
+    mentir, algunos dir\xE1n verdades incompletas, otros dar\xE1n informaci\xF3n
+    falsa."
+  - "Tu objetivo es identificarlo antes de que vuelva a matar utilizando la informaci\xF3n
+    que recibes de los asistentes de la fiesta."

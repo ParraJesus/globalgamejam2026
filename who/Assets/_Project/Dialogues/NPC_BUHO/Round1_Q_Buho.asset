@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round1_Q_Buho
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "S\xED, el lugar es bonito. Un poco fr\xEDo, pero supongo que esa es la idea.
+    Estas reuniones siempre terminan dividi\xE9ndose en peque\xF1os grupos, \xBFte
+    fijaste? Nadie se queda mucho tiempo en el mismo sitio."
+  - "Yo vine m\xE1s por curiosidad que por otra cosa. Me interesa ver qu\xE9 tipo
+    de personas vienen a este tipo de eventos."
