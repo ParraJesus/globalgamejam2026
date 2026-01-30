@@ -34,12 +34,19 @@ public class NpcController : MonoBehaviour, IInteractive
 
     public bool CanInteract()
     {
-        return !IsTalking;
+        return !IsTalking && GameManager.instance.CurrentAttemptDialogue > 0;
     }
 
     public void Interact()
     {
         if (IsTalking) return;
+
+        if (!GameManager.instance.ConsumeDialogueAttempt())
+        {
+            Debug.Log("No quedan intentos para hablar.");
+            return;
+        }
+
         Talk();
     }
 

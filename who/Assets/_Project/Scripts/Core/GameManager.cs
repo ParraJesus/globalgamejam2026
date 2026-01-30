@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] NarrativeDialogueData goodEndingEarly;
     [SerializeField] NarrativeDialogueData goodEndingLate;
 
+    public event Action<int> OnAttemptsChanged;
+
     private void Awake()
     {
         if (instance == null)
@@ -40,18 +43,38 @@ public class GameManager : MonoBehaviour
         dialogueUI.StartNarrative(introDialogue);
     }
 
-    public void NextRound()
-    {
-        if (CurrentRound < rounds.round3)
-            CurrentRound++;
-
-        if (CurrentAttemptDialogue > 0)
-            CurrentAttemptDialogue--;
-    }
-
     public void SetCurrentRound(rounds round)
     {
         CurrentRound = round;
+        ResetAttemptsForRound();
+    }
+
+    void ResetAttemptsForRound()
+    {
+        switch (CurrentRound)
+        {
+            case rounds.round1:
+                CurrentAttemptDialogue = 5;
+                break;
+            case rounds.round2:
+                CurrentAttemptDialogue = 4;
+                break;
+            case rounds.round3:
+                CurrentAttemptDialogue = 3;
+                break;
+        }
+
+        OnAttemptsChanged?.Invoke(CurrentAttemptDialogue);
+    }
+
+    public bool ConsumeDialogueAttempt()
+    {
+        if (CurrentAttemptDialogue <= 0)
+            return false;
+
+        CurrentAttemptDialogue--;
+        OnAttemptsChanged?.Invoke(CurrentAttemptDialogue);
+        return true;
     }
 
     public void SetState(GameState state)

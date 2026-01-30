@@ -139,6 +139,12 @@ public class DialogueUI : MonoBehaviour
 
         Debug.Log($"Current NPC: {currentNPC}");
 
+        if (!GameManager.instance.ConsumeDialogueAttempt())
+        {
+            Debug.Log("No hay más intentos para hablar.");
+            return;
+        }
+
         if (currentNPC.isKiller)
         {
             GameManager.instance.IdentifyKiller();
