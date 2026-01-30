@@ -17,11 +17,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] DialogueUI dialogueUI;
     [SerializeField] NarrativeDialogueData introDialogue;
-    [SerializeField] NarrativeDialogueData badEnding;
-    [SerializeField] NarrativeDialogueData goodEndingEarly;
-    [SerializeField] NarrativeDialogueData goodEndingLate;
 
     public event Action<int> OnAttemptsChanged;
+
+    public EndingState CurrentEnding { get; private set; }
 
     private void Awake()
     {
@@ -109,23 +108,34 @@ public class GameManager : MonoBehaviour
     {
         if (!KillerIndentified)
         {
-            EndGame(badEnding);
+            SetEnding(EndingState.Bad);
             return;
         }
 
         if (Deaths == 1)
         {
-            EndGame(goodEndingEarly);
+            SetEnding(EndingState.GoodEarly);
             return;
         }
 
-        EndGame(goodEndingLate);
+        SetEnding(EndingState.GoodLate);
     }
 
-    void EndGame(NarrativeDialogueData ending)
+   void SetEnding(EndingState ending)
     {
-        GameManager.instance.IsEndGame = true;
-        GameManager.instance.SetState(GameState.Narrative);
-        dialogueUI.StartNarrative(ending);
+        CurrentEnding = ending;
+        IsEndGame = true;
+        SetState(GameState.Narrative);
+
+        StartCoroutine(LoadEndingScene());
+    }
+
+    IEnumerator LoadEndingScene()
+    {
+        yield return ScreenFader.instance.FadeOut();
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Endings");
+
+        yield return ScreenFader.instance.FadeIn();
     }
 }
