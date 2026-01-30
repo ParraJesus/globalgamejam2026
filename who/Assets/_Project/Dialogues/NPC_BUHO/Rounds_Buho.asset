@@ -17,5 +17,5 @@ MonoBehaviour:
   voiceSound: {fileID: 0}
   rounds:
   - {fileID: 11400000, guid: fbb045e1af8f002469a870bb6b38bae6, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7a00b065d7a553044a0fb81e43eb0694, type: 2}
+  - {fileID: 11400000, guid: 905d23b02fc4b524fba078eb4809d2e3, type: 2}

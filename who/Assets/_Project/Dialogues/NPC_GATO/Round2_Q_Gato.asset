@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "(No hay m\xE1s respuestas)"
+  - "No quise acercarme a nadie, no habl\xE9 con nadie m\xE1s que t\xFA, prefiero
+    mantener mi espacio. Hay algo en el ambiente que\u2026 no me da confianza."
+  - "Ol\xED que el tipo con m\xE1scara de le\xF3n tom\xF3 un poco de bebida. Nada
+    m\xE1s me llam\xF3 la atenci\xF3n, no se mucho m\xE1s."

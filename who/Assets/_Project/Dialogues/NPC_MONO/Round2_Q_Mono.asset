@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "No estuve cerca del chico con la m\xE1scara de oso, estuve m\xE1s tiempo observando
-    la gente alrededor del sal\xF3n, por lo que no se mucho de lo que pas\xF3 con
-    el."
-  - "Creo que lo vi hablando con el hombre con m\xE1scara de elefante antes de que
-    se apagaran las luces\u2026 o al menos eso me pareci\xF3. No estoy completamente
-    segura, todo pas\xF3 muy r\xE1pido."
+  - "Despu\xE9s de todo, habl\xE9 un poco con el tipo del oso junto a las bebidas,
+    aunque no recuerdo exactamente sobre qu\xE9\u2026 creo que bromeamos un poco,
+    nada realmente serio."
+  - "No beb\xED alcohol, lo juro, ni una sola pizca."

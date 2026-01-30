@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "Estaba en un rinc\xF3n, observando. No vi al hombre con m\xE1scara de elefante
-    acercarse al chico junto a la barra."
-  - "El chico con m\xE1scara de le\xF3n se acerc\xF3 a la ventana a fumar cuando
-    se apagaron las luces, me llam\xF3 la atenci\xF3n."
+  - "\xBFVio ese cuadro en la pared? Es\u2026 exagerado. A todos parece gustarles.
+    A m\xED\u2026 no tanto."
+  - "Demasiado lujo para una noche. A nadie parece importarle aunque usted\u2026
+    parece que entiende lo que quiero decir."

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 1
   lines:
-  - "Extra\xF1o\u2026 eh, no estoy seguro.\r\nYo solo me concentro en la comida,
-    que al menos puedo decir si eso esta raro."
+  - "Yo no toqu\xE9 ni me acerqu\xE9 al chico junto a la mesa. Solo observ\xE9 desde
+    la otra mesa de comidas. No miento, cr\xE9eme por favor."

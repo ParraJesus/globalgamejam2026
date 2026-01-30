@@ -18,4 +18,3 @@ MonoBehaviour:
   rounds:
   - {fileID: 11400000, guid: b7d8812458ed47847a0d720b23291b98, type: 2}
   - {fileID: 11400000, guid: aaadd31505b40d54d8afe045bbc22bbe, type: 2}
-  - {fileID: 0}

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "Desde hace tiempo te he visto fisgonear en asuntos que no te importaban. A ver,
-    no vi nada fuera de lo normal, todo parec\xEDa tranquilo mientras estuve cerca
-    del sal\xF3n."
-  - "La chica con m\xE1scara de b\xFAho se separ\xF3 un momento de la chica con m\xE1scara
-    de zorro y se acerc\xF3 a la mesa, nada m\xE1s."
+  - "Yo solo hago lo m\xEDo. Bailo si quiero, hablo si quiero. Y no me interesa que
+    a alguien le parezca exagerado."
+  - "No me gusta que me cuestionen. Y s\xED, noto que usted me observa. Bien\u2026
+    pero tenga cuidado, no todos reaccionan igual a la curiosidad ajena."

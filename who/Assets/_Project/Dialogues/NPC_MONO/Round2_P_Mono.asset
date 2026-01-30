@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 1
   lines:
-  - "Y\u2026 bueno, alguien estaba haciendo un ruido extra\xF1o, tintineos met\xE1licos,
-    como anillos o cadenas movi\xE9ndose cerca, supongo que tu sabr\xE1s quien podr\xEDa
-    ser."
+  - "Estoy seguro de que la chica con m\xE1scara de zorro te dijo un par de cosas
+    que no eran ciertas. La escuch\xE9 cambiar su historia dos veces mientras habl\xE1bamos."

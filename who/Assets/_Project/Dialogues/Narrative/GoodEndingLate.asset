@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeDialogueData
   lines:
   - "Finalmente, despu\xE9s de que transcurrieran aquellos dos asesinatos, el detective
-    logr\xF3 descubrir a la asesina, resultando ser la enmascarada de b\xFAho. Tras
-    acabar con la vida de dos personas, se reunieron las pruebas necesarias para
-    confirmar su culpabilidad, permitiendo que fuera arrestada como una asesina en
-    serie."
+    logr\xF3 descubrir a la asesina, resultando ser la enmascarada de b\xFAho. "
+  - Tras acabar con la vida de dos personas, se reunieron las pruebas necesarias
+    para confirmar su culpabilidad, permitiendo que fuera arrestada como una asesina
+    en serie.
   - "Al revisar sus pertenencias, encontraron una llave oculta en el bolsillo de
     su abrigo. Con ella, lograron abrir las puertas que hab\xEDan permanecido cerradas
-    durante toda la noche. Una vez abiertas, los sobrevivientes pudieron abandonar
-    el lugar, dejando atr\xE1s la fiesta que se hab\xEDa convertido en una condena."
+    durante toda la noche. "
+  - "Una vez abiertas, los sobrevivientes pudieron abandonar el lugar, dejando atr\xE1s
+    la fiesta que se hab\xEDa convertido en una condena."
   - "La noche termin\xF3, junto con la fiesta que los encerr\xF3 por horas."

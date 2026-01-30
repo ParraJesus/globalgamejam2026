@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueRoundData
   round: 0
   dialogueSequences:
-  - {fileID: 11400000, guid: 352c99f0915426e488a1a079d32e4f70, type: 2}
-  - {fileID: 11400000, guid: a91cb3ce96c52f24fa9040a696b45ac9, type: 2}
+  - {fileID: 11400000, guid: 334bc1e892ea79849a2d813f6d7f9a8f, type: 2}
+  - {fileID: 11400000, guid: 426db969514820441956b6e9adb8b95c, type: 2}

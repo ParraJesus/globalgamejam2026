@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   mode: 0
   lines:
-  - "No te hab\xEDa visto antes. Los rostros nuevos suelen ser los m\xE1s interesantes.
-    \xBFVienes por alguien en particular o solo aceptaste la invitaci\xF3n?"
-  - "Estas fiestas siempre prometen m\xE1s de lo que entregan. Igual no me quejo,
-    por ejemplo, llevo hablando un buen rato con esta chica, la de m\xE1scara de
-    B\xFAho."
+  - "Yo vine porque me llamaron a \xFAltima hora; ni siquiera sab\xEDa bien de qu\xE9
+    iba todo esto; igual, no me quejo. Un buen lugar tiene buena bebida."
+  - "Esta gente est\xE1 bastante tensa, \xBFTe has dado cuenta? Puede que saque a
+    esa mujer con m\xE1scara de conejo a bailar un rato, as\xED me relajo un poco."
+  - "Yo no sirvo para eso, la verdad. Si pienso algo, se me nota, as\xED que al final
+    solo digo lo que pienso todo el tiempo."

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round3_Q_Zorro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "Durante la oscuridad escuch\xE9 movimiento cerca de donde est\xE1bamos. Me llam\xF3
+    la atenci\xF3n.\r\n"
+  - "Y cuando volvi\xF3 la luz, me fij\xE9 que uno de los objetos de decoraci\xF3n
+    hab\xEDa desaparecido. No estaba m\xE1s."

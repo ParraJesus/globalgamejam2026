@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef425c3f336597d4cba089362e5a2846, type: 3}
-  m_Name: Round2_Oso
+  m_Name: Round3_Leon
   m_EditorClassIdentifier: Assembly-CSharp::DialogueRoundData
-  round: 1
+  round: 2
   dialogueSequences:
-  - {fileID: 11400000, guid: 37b23ebac8d128442a463d62181d58be, type: 2}
-  - {fileID: 11400000, guid: da2f72f51445d744b81e0a1d389267d6, type: 2}
+  - {fileID: 11400000, guid: 51675c9c08e497a40b97176304249974, type: 2}
+  - {fileID: 11400000, guid: d5e44e2e72e7c2f4ca0ebec81686c5d7, type: 2}

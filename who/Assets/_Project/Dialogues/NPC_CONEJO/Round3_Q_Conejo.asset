@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
-  m_Name: Round2_P_Oso
+  m_Name: Round3_Q_Conejo
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  mode: 1
+  mode: 0
   lines:
-  - "Parece que es el sujeto que viene a ayudarme, no le dir\xE9 mucho, pero te lo
-    dejar\xE9 de consejo para esta noche. He aprendido que los que siempre se rodean
-    de gente son los m\xE1s peligrosos, as\xED que ten cuidado con ellos."
+  - "\xA1Ay! Cuando se apag\xF3 la luz me asust\xE9 much\xEDsimo y me qued\xE9 quieta.
+    No pod\xEDa moverme de miedo."
+  - "Escuch\xE9 algo caer, fue un golpe bastante fuerte, \xA1Ay!, estoy segura de
+    que todos en la oscuridad lo escucharon."

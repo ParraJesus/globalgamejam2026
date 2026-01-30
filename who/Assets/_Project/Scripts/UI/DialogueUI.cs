@@ -13,6 +13,7 @@ public class DialogueUI : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public Image portraitImage;
     public TextMeshProUGUI npcName;
+    [SerializeField] public Sprite PlaceHolder;
 
     [Header("Buttons")]
     public Button questionButton;
@@ -227,8 +228,8 @@ public class DialogueUI : MonoBehaviour
         narrativeLines = data.lines;
         narrativeIndex = 0;
 
-        portraitImage.gameObject.SetActive(false);
-        npcName.gameObject.SetActive(false);
+        portraitImage.sprite = PlaceHolder;
+        npcName.text = "Parra";
         questionButton.gameObject.SetActive(false);
         pressureButton.gameObject.SetActive(false);
         accuseButton.gameObject.SetActive(false);
