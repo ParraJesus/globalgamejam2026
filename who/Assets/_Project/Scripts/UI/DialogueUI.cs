@@ -138,6 +138,11 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
+    public void OnClose()
+    {
+        currentNPC.SetIsTalking(false);
+    }
+
     // ===== TYPING =====
     void StartTyping(string line)
     {
