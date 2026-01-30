@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Round3_Example.unity
     guid: 1825c99826bd83b489797ce77e78f247
+  - enabled: 1
+    path: Assets/_Project/Scenes/Endings.unity
+    guid: 4de79906e7ce540489c2e6ba05c4fa60
   - enabled: 0
     path: Assets/_Project/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
