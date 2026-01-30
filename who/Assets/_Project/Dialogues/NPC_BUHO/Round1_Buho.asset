@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef425c3f336597d4cba089362e5a2846, type: 3}
-  m_Name: Dialogues_Zorro
+  m_Name: Round1_Buho
   m_EditorClassIdentifier: Assembly-CSharp::DialogueRoundData
   round: 0
   dialogueSequences:
-  - {fileID: 11400000, guid: 54df902a9e5b49b4395d1b16ba6437ff, type: 2}
-  - {fileID: 11400000, guid: d4712af1d24d2bf42801bbe2afdc2295, type: 2}
+  - {fileID: 11400000, guid: 881afde83a603eb4f81b54e5bf0af5b4, type: 2}
+  - {fileID: 11400000, guid: 78cc36a5e8a0ae44fba3f0cbea03b043, type: 2}

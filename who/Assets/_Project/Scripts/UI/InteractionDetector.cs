@@ -13,6 +13,9 @@ public class InteractionDetector: MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
+        if (GameManager.instance.CurrentState != GameState.Gameplay)
+            return;
+
         if (context.performed)
         {
             interactiveInRange?.Interact();
@@ -21,6 +24,9 @@ public class InteractionDetector: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (GameManager.instance.CurrentState != GameState.Gameplay)
+            return;
+
         if (collision.TryGetComponent(out IInteractive interactable) && interactable.CanInteract())
         {
             interactiveInRange = interactable;

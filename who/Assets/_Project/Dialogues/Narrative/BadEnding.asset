@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dc8886501a6154bb3f211468b89f4c, type: 3}
+  m_Name: BadEnding
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeDialogueData
+  lines:
+  - "Extracto del expediente policial:\r\n\u201CDe acuerdo con los registros del
+    sistema de seguridad, el cierre autom\xE1tico de la mansi\xF3n se activ\xF3 durante
+    la noche y se desactiv\xF3 al amanecer, permitiendo la salida de todos los asistentes
+    restantes.\r\n"
+  - "Se confirmaron tres fallecidos. Ricardo S, Daniela Pardo y el investigador XXX
+    que ingres\xF3 bajo la cobertura de invitado; este \xFAltimo fue hallado en el
+    despacho principal, sin signos de lucha inmediata. Causa de muerte determinada
+    como traumatismo craneoencef\xE1lico seguido de asfixia"
+  - "Durante las entrevistas posteriores, los sobrevivientes ofrecieron versiones
+    contradictorias. Las acusaciones se distribuyeron entre varios asistentes sin
+    que pudiera establecerse una responsabilidad directa; la ausencia de grabaciones
+    completas y la manipulaci\xF3n del sistema de seguridad imposibilitaron una reconstrucci\xF3n
+    exacta de los hechos."
+  - "Conclusi\xF3n oficial:\r\nNo fue posible identificar al responsable de los homicidios.
+    El fallecimiento del investigador se considera una consecuencia directa del colapso
+    del orden durante el encierro.\r\nEstado del caso: CERRADO.\u201D\r\n"

@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
-  m_Name: Question_Zorro
+  m_Name: Round2_P_Zorro
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  mode: 0
+  mode: 1
   lines:
-  - "No te hab\xEDa visto antes. Los rostros nuevos suelen ser los m\xE1s interesantes.
-    \xBFVienes por alguien en particular o solo aceptaste la invitaci\xF3n?"
-  - "Estas fiestas siempre prometen m\xE1s de lo que entregan. Igual no me quejo,
-    por ejemplo, llevo hablando un buen rato con esta chica, la de m\xE1scara de
-    B\xFAho."
+  - "Y\u2026 bueno, alguien estaba haciendo un ruido extra\xF1o, tintineos met\xE1licos,
+    como anillos o cadenas movi\xE9ndose cerca, supongo que tu sabr\xE1s quien podr\xEDa
+    ser."

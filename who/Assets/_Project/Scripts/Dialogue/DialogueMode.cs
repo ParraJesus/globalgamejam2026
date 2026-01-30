@@ -3,5 +3,6 @@ using UnityEngine;
 public enum DialogueMode
 {
     Question,
-    Pressure
+    Pressure,
+    Narrator
 }

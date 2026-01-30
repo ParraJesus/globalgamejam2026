@@ -16,6 +16,9 @@ public class DetectiveController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.instance.CurrentState != GameState.Gameplay)
+            return;
+
         rb.linearVelocity = moveInput * moveSpeed;
     }
 

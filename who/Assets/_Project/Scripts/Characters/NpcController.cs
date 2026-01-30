@@ -6,10 +6,20 @@ public class NpcController : MonoBehaviour, IInteractive
     public string NPCID {  get; private set; }
     public bool IsTalking { get; private set; }
 
-    void Start()
+    [SerializeField] public bool isKiller;
+
+    [SerializeField] public NarrativeDialogueData AccuseDialog;
+
+    void Awake()
     {
         NPCID ??= GlobalHelper.GenerateUniqueID(gameObject);
+
+        if (dialogueUI != null) 
+        {
+            dialogueUI.OnDialogueEnded += EndTalking;
+        }
     }
+
     public bool CanInteract()
     {
         return !IsTalking;
@@ -40,6 +50,17 @@ public class NpcController : MonoBehaviour, IInteractive
         {
             dialogueUI.gameObject.SetActive(true);
             dialogueUI.SetCharacter(GetComponent<CharacterDialogue>());
+            dialogueUI.SetTarget(GetComponent<NpcController>());
         }
+    }
+
+    void EndTalking()
+    {
+        IsTalking = false;
+    }
+
+    public void ForceReset()
+    {
+        IsTalking = false;
     }
 }
