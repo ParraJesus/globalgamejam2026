@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] DialogueUI dialogueUI;
     [SerializeField] NarrativeDialogueData introDialogue;
+    [SerializeField] Sprite sprite;
 
     public event Action<int> OnAttemptsChanged;
 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         RoundManager.Instance.OnAllRoundsCompleted += EvaluateGame;
 
         dialogueUI.OnDialogueEnded += OnIntroFinished;
+        dialogueUI.npcName.text = "Parra";
         dialogueUI.StartNarrative(introDialogue);
     }
 
@@ -135,7 +137,14 @@ public class GameManager : MonoBehaviour
         yield return ScreenFader.instance.FadeOut();
 
         UnityEngine.SceneManagement.SceneManager.LoadScene("Endings");
+        SetPortrait(sprite);
 
         yield return ScreenFader.instance.FadeIn();
+    }
+
+    public void SetPortrait(Sprite sprite)
+    {
+        dialogueUI.portraitImage.sprite = sprite;
+        dialogueUI.npcName.text = "Parra";
     }
 }

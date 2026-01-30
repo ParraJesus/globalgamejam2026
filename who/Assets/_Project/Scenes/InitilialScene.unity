@@ -185,6 +185,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1042278737948822726, guid: e6ff9933a93c0824581c0965937f4fb9, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -4125187599421230462, guid: 4f8dcdbffc93ef34b84e24b8079579f9, type: 3}
+    - target: {fileID: 1042278737948822726, guid: e6ff9933a93c0824581c0965937f4fb9, type: 3}
       propertyPath: dialogueUI
       value: 
       objectReference: {fileID: 1435112504}
@@ -772,7 +776,7 @@ PrefabInstance:
     - target: {fileID: 410369847819202551, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3292793625578150579, guid: a7ca8f9f9fa0ea04abeaf25fe837b69d, type: 3}
+      objectReference: {fileID: -4125187599421230462, guid: 4f8dcdbffc93ef34b84e24b8079579f9, type: 3}
     - target: {fileID: 2567340886759938118, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7053018
@@ -800,7 +804,7 @@ PrefabInstance:
     - target: {fileID: 5068924691530863896, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: PlaceHolder
       value: 
-      objectReference: {fileID: 8531308680984915293, guid: b7673a216dc59f848ae17676fdd166f1, type: 3}
+      objectReference: {fileID: -4125187599421230462, guid: 4f8dcdbffc93ef34b84e24b8079579f9, type: 3}
     - target: {fileID: 5068924691530863896, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: canvasGroup
       value: 
@@ -851,11 +855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8956222899026403394, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 181.25
+      value: 256.25
       objectReference: {fileID: 0}
     - target: {fileID: 8956222899026403394, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 231.25
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8956222899026403394, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -876,6 +880,10 @@ PrefabInstance:
     - target: {fileID: 8956222899026403394, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016609339780079241, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9016609339780079241, guid: 0ba6c8afd51a21e4c9ef6859247aed6f, type: 3}
       propertyPath: m_fontStyle

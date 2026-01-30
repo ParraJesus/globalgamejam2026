@@ -165,6 +165,9 @@ public class DialogueUI : MonoBehaviour
     public void OnClose()
     {
         currentNPC.SetIsTalking(false);
+
+        portraitImage.sprite = PlaceHolder;
+        npcName.text = "Parra";
     }
 
     // ===== TYPING =====
@@ -228,8 +231,6 @@ public class DialogueUI : MonoBehaviour
         narrativeLines = data.lines;
         narrativeIndex = 0;
 
-        portraitImage.sprite = PlaceHolder;
-        npcName.text = "Parra";
         questionButton.gameObject.SetActive(false);
         pressureButton.gameObject.SetActive(false);
         accuseButton.gameObject.SetActive(false);
