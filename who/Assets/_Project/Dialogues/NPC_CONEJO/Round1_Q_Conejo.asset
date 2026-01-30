@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round1_Q_Conejo
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "\xBFPor qu\xE9 viniste a este lugar, buscas algo en particular?"
+  - "\xA1Ay! , menos mal alguien se acerca, porque no sab\xEDa qu\xE9 hacer con las
+    manos. Estoy algo nerviosa, disculpa si se nota demasiado."
+  - "Vine con uno de ellos, pero igual me siento medio fuera de lugar. No conozco
+    a los de aqui, y estas m\xE1scaras no siento que me ayuden mucho tampoco."

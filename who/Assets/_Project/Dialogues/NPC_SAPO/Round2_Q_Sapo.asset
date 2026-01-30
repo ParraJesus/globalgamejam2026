@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec67372583111449a48e50ad523632c, type: 3}
+  m_Name: Round2_Q_Sapo
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  mode: 0
+  lines:
+  - "Vi la m\xE1scara de le\xF3n cerca de la barra, pero no s\xE9 si tuvo algo que
+    ver con lo que pas\xF3, no puedo asegurarlo."
+  - "Creo que la chica con m\xE1scara de mapache estaba demasiado cerca del chico
+    junto a la barra\u2026 creo que deber\xEDas de preguntarle, podr\xEDa tener relaci\xF3n
+    con lo que ocurri\xF3."

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bb3db4453e74247aef4e3c00efb5ef, type: 3}
+  m_Name: Rounds_Conejo
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueData
+  npcName: Conejo
+  npcPortrait: {fileID: 8531308680984915293, guid: b7673a216dc59f848ae17676fdd166f1, type: 3}
+  voiceSound: {fileID: 0}
+  rounds:
+  - {fileID: 11400000, guid: ebf97e74cfa257a41bba61f814bf9a9d, type: 2}
+  - {fileID: 11400000, guid: ff20d0479cafaa54d888688dd6673210, type: 2}

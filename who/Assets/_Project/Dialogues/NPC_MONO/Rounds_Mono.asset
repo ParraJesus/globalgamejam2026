@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bb3db4453e74247aef4e3c00efb5ef, type: 3}
+  m_Name: Rounds_Mono
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueData
+  npcName: Mono
+  npcPortrait: {fileID: 3517987708361127489, guid: 08a28e9145dadbc4eb97a4b5875f1990, type: 3}
+  voiceSound: {fileID: 0}
+  rounds:
+  - {fileID: 11400000, guid: 75f2cfbff98736040a41502799556f5d, type: 2}
+  - {fileID: 11400000, guid: 392fe5eaa20f145419d8a262291089c5, type: 2}
+  - {fileID: 0}
